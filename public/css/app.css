@@ -1,0 +1,102 @@
+html,
+body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.login-box {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.email-box,
+.password-box,
+.button-box {
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.email-box label,
+.password-box label,
+.button-box label {
+  text-align: left;
+  display: inline-block;
+  width: 100px;
+}
+
+.dice-side {
+  flex: 0 1 auto;
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: #ffffef;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 30px;
+  width: 30px;
+}
+
+.dice-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.dice-field {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 400px;
+}
+
