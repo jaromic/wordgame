@@ -4,7 +4,7 @@
 
 @section('main')
 
-    <h1>Login</h1>
+    <h1>Anmeldung</h1>
     {{--    @error--}}
     {{--    <div class="alert-danger">Anmeldung fehlgeschlagen.</div>--}}
     {{--    @enderror--}}
@@ -16,8 +16,7 @@
             <div class="password-box"><label for="password">Kennwort</label>
                 <input id="password" name="password" type="password"></input></div>
             <div class="button-box">
-                <label>x</label>
-                <button type="submit">Anmelden</button>
+                <label>&nbsp;</label><div><button type="submit">Anmelden</button></div>
             </div>
             <div class="links-box">
                 <a href="{{ route('register') }}">Registrieren</a> <a href="{{ route('resetpassword') }}">Kennwort

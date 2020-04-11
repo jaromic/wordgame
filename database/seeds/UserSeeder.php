@@ -13,10 +13,26 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $user = new User();
-        $user->name = 'user';
-        $user->email = 'user@example.com';
-        $user->password = Hash::make('user');
-        $user->save();
+        foreach ([
+                     [
+                         'name' => 'Eva',
+                         'email' => 'eva@example.com'
+                     ],
+                     [
+                         'name' => 'Linda',
+                         'email' => 'linda@example.com'
+                     ],
+                     [
+                         'name' => 'Michael',
+                         'email' => 'michael@example.com'
+                     ],
+                 ] as $userData) {
+
+            $user = new User();
+            $user->name = $userData['name'];
+            $user->email = $userData['email'];
+            $user->password = Hash::make($userData['name']);
+            $user->save();
+        }
     }
 }

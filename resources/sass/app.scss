@@ -50,11 +50,11 @@ html, body {
 }
 
 .login-box {
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
+align-items: baseline;
 }
 
 .email-box, .password-box, .button-box {
@@ -65,32 +65,37 @@ html, body {
         display: inline-block;
         width: 100px;
     }
+    div {
+        display: inline-block;
+        width: 143px;
+        border-width: 0;
+        text-align: left;
+    }
 }
 
 .dice-side {
     flex: 0 1 auto;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #ffffef;
     font-weight: bold;
-    font-size: 1.5rem;
-    height: 30px;
-    width: 30px;
+    font-size: 2.5rem;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
 }
 
 .dice-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1 0 auto;
-    width: 100%;
 }
 
 .dice-field {
     display: flex;
-    flex: 1 0 auto;
+    //flex: 1 0 auto;
     flex-direction: column;
-    justify-content: space-between;
-    width: 400px;
-    height: 400px;
+    justify-content: space-around;
+    align-content: center;
 }
